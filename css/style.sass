@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap")
+
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap')
 
 *
     margin: 0
@@ -8,23 +9,21 @@
 body
     background-color: #272727
     color: #808080
-    font-family: "Muli", sans-serif
+    font-family: 'Mochiy Pop P One', sans-serif
+    
 
 
 .container
-    //max-width: 1200px
-    //width: 90%
-    //
-    //margin: 0 auto
-
+    max-width: 1200px
+    width: 90vw
+    margin: 0 auto
     display: flex
-    width: 90vh
-
+    flex-direction: row
     .panel
         background-size: cover
         background-position: center
         background-repeat: no-repeat
-        height: 80vh
+        height: 70vh
         border-radius: 50px
         cursor: pointer
         flex: 0.5
@@ -38,11 +37,17 @@ body
             left: 20px
             margin: 0
             opacity: 0  //Ocultamos el texto
+            font-family: "Font Awesome 5 Free"
+            font-weight: 900
+
     .active
         flex: 5
         h3
             opacity: 1
+            color: #fff
             transition: opacity 0.3s ease-in 0.4s
+
+
 
 
 @media (max-width: 480px)
